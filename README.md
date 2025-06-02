@@ -108,7 +108,7 @@ source venv/bin/activate  # On Windows: venv\Scripts\activate
 pip install boto3 kagglehub pillow tqdm pandas
 ```
 
-## Data Preparation
+## Data Preparation (AWS configured)
 
 1. **Download Dataset**
 ```bash
@@ -119,7 +119,7 @@ python utils/download_animals10.py
 2. **Create Training Partitions**
 ```bash
 # Split dataset into training partitions
-python utils/partition_dataset.py
+python utils/partition_dataset.py --source_dir .\data\clean\
 ```
 
 3. **Prepare Validation Set**
