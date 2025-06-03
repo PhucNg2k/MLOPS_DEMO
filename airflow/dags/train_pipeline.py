@@ -447,7 +447,7 @@ def cleanup(**context):
     return None
 
 with DAG(
-    'animal_classification_training_v16',
+    'animal_classification_training_v17',
     default_args=default_args,
     description='Train animal classification model on new partitions',
     schedule_interval='0 */2 * * *',  # Run every 2 hours
